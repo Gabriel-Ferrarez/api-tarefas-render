@@ -12,7 +12,8 @@ let tarefas = [
 app.get("/", (req, res) => {
   res.json({
     status: "API de Tarefas rodando com CI/CD no Render",
-    versao: "1.0.0"
+    versao: "1.0.1",
+    timestamp: new Date().toISOString()
   });
 });
 
